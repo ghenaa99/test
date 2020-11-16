@@ -7,16 +7,16 @@ using System.Web.UI.WebControls;
 
 namespace test
 {
-    public partial class WebForm1 : System.Web.UI.Page
+    public partial class PageQ1 : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-         
+
         }
 
-        protected void btn1_Click(object sender, EventArgs e)
+        protected void btn_Click(object sender, EventArgs e)
         {
-            txt2.Text = txt1.Text;
+            Response.Redirect("PageQ2.aspx?name=" + txtFirst.Text +"&lastname=" + txtLast.Text);
         }
     }
 }

@@ -7,16 +7,14 @@ using System.Web.UI.WebControls;
 
 namespace test
 {
-    public partial class WebForm1 : System.Web.UI.Page
+    public partial class WebForm2 : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-         
-        }
-
-        protected void btn1_Click(object sender, EventArgs e)
-        {
-            txt2.Text = txt1.Text;
+            string name = Request.QueryString.Get("name");
+            string lastname = Request.QueryString.Get("lastname");
+            Response.Write(name + " " +  lastname);
+            
         }
     }
 }

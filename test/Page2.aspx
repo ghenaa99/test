@@ -12,7 +12,7 @@
             <asp:CheckBox ID="CheckBox1" runat="server" />
         </div>
         <p>
-            <asp:Button ID="Button1" runat="server" Text="Button" />
+            <asp:Button ID="btn1" runat="server" Text="Button" OnClick="Button1_Click" />
         </p>
     </form>
 </body>
