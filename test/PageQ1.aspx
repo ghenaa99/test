@@ -17,7 +17,9 @@
             <asp:Button ID="btn" runat="server" Text="Submit" OnClick="btn_Click" />
         </div>
         <p>
-            &nbsp;</p>
+            <asp:Button ID="btnset" runat="server" OnClick="btnset_Click" Text="Set" />
+            <asp:Button ID="btnerstor" runat="server" Text="Restore" OnClick="btnerstor_Click" />
+        </p>
         <p>
             &nbsp;</p>
         <p>
