@@ -7,14 +7,17 @@ using System.Web.UI.WebControls;
 
 namespace test
 {
-    public partial class WebForm2 : System.Web.UI.Page
+    public partial class Application1 : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            string name = Request.QueryString.Get("name");
-            string lastname = Request.QueryString.Get("lastname");
-            Response.Write(name + " " +  lastname);
-           
+
+        }
+
+        protected void btnsend_Click(object sender, EventArgs e)
+        {
+            Application["Name"] = txtName.Text;
+            Response.Redirect("Application2.aspx");
         }
     }
 }

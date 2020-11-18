@@ -7,14 +7,11 @@ using System.Web.UI.WebControls;
 
 namespace test
 {
-    public partial class WebForm2 : System.Web.UI.Page
+    public partial class se4 : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            string name = Request.QueryString.Get("name");
-            string lastname = Request.QueryString.Get("lastname");
-            Response.Write(name + " " +  lastname);
-           
+            Label1.Text = Session["Name"].ToString();
         }
     }
 }
